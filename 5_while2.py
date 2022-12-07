@@ -15,13 +15,20 @@
     
 """
 
-questions_and_answers = {}
+distionary = {"Как дела?": "Превосходно!", "Что делаешь?": "Программирую"}
 
-def ask_user(answers_dict):
-    """
-    Замените pass на ваш код
-    """
-    pass
+def ask_user(question_user):
+
+ while True:
+
+    if question_user == distionary.get(question_user)     :
+      print ("Хорошо,что получен ответ \n")
+      break
+    else:
+      question_user=input("Привет!Какой у тебя вопрос? \n")
+
     
+question_user=input("Привет!Какой у тебя вопрос? \n")
 if __name__ == "__main__":
-    ask_user(questions_and_answers)
+  
+ ask_user(question_user)

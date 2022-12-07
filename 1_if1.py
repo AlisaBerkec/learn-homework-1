@@ -13,13 +13,31 @@
 * Вывести содержимое переменной на экран
 
 """
+from unicodedata import name
 
-def main():
-    """
-    Эта функция вызывается автоматически при запуске скрипта в консоли
-    В ней надо заменить pass на ваш код
-    """
-    pass
+
+years_user = input("Привет! Сколько тебе лет?")
+
+def main(years_user):
+   
+    
+    if 0 < int(years_user) <= 6:
+      return("Ты ходишь в детский садик)")
+    elif 7 <= int(years_user) <= 16:
+      return("Ты ходишь в школу)")
+    elif 17 <= int(years_user) <=22:
+      return("Ты ходишь в институт)")
+    elif 23<= int(years_user) <=56:
+      return("Ты ходишь на работу)")
+    elif 57<= int(years_user) <=99:
+      return("Заслуженный отдых)")
+    if int(years_user) <= 0 :
+      return ("Неверный возраст")
+    if int(years_user) >= 100 :
+      return ("Cтолько не живут")
+
 
 if __name__ == "__main__":
-    main()
+
+  main(years_user) 
+  print (main(years_user))

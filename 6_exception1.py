@@ -8,13 +8,19 @@
   перехватывала KeyboardInterrupt, писала пользователю "Пока!" 
   и завершала работу при помощи оператора break
     
+
 """
 
-def hello_user():
-    """
-    Замените pass на ваш код
-    """
-    pass
-    
-if __name__ == "__main__":
-    hello_user()
+def ask_user (answer_user):   
+  
+  while True:                                            
+    if answer_user  == 'Хорошо':          
+        print("Пока")
+        break
+    else:                                  
+        answer_user = input ('Привет.Как дела? \n')  
+
+
+if __name__ == "__main__":   
+ answer_user = input("Привет.Как дела? \n")
+ ask_user(answer_user)  
